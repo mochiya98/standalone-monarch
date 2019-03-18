@@ -1,0 +1,25 @@
+{
+  "name": "standalone-monarch",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Yukimasa Funaoka <yukimasafunaoka@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "private": true,
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "cache-loader": "^2.0.1",
+    "monaco-editor-core": "^0.16.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "scripts": {
+    "build": "npx webpack --mode=production",
+    "build:dev": "npx webpack --mode=development",
+    "stats": "npx webpack --mode=development --json>stats.json"
+  }
+}

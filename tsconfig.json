@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.iterable"
+    ],
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "classic",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "target": "es5",
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "declaration": false,
+    "noImplicitReturns": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/monaco-editor/*", "src/*"],
+      "test/*": ["test/*"]
+    },
+    "types": []
+  },
+  "include": [
+    "src/typings/require.d.ts",
+    "src/typings/require-monaco.d.ts",
+    "src/typings/thenable.d.ts",
+    "src/typings/es6-promise.d.ts",
+    "src/typings/lib.es2018.promise.d.ts",
+    "src/typings/lib.array-ext.d.ts",
+    "src/typings/lib.ie11_safe_es6.d.ts",
+    "src/monaco-editor/vs/css.d.ts",
+    "src/monaco-editor/vs/monaco.d.ts",
+    "src/monaco-editor/vs/nls.d.ts",
+    "src/monaco-editor/vs/editor/*",
+    "src/monaco-editor/vs/base/common/*",
+    "src/monaco-editor/vs/base/browser/*",
+    "src/monaco-editor/vs/base/parts/tree/*",
+    "src/monaco-editor/vs/base/parts/quickopen/*",
+    "src/monaco-editor/vs/platform/*/common/*",
+    "src/monaco-editor/vs/platform/*/browser/*",
+    "src/monaco-editor/vs/basic-languages/*",
+    "src/index.ts"
+  ],
+  "files": [
+    "node_modules/monaco-editor-core/monaco.d.ts"
+  ],
+  "exclude": ["node_modules/*"]
+}
